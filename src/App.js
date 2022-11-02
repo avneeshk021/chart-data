@@ -38,9 +38,9 @@ const pdata = [
 function App() {
   return (
     <>
-      <h1 className="chart-heading">ScatterChart</h1>
-      <ResponsiveContainer width="100%" aspect={3}>
-        <ScatterChart data={pdata} width={500} height={300} margin={{ top: 5, right: 300, left: 20, bottom: 5 }}>
+      <h3 className="chart-heading">ScatterChart</h3>
+      <ResponsiveContainer width="120%" aspect={3}>
+        <ScatterChart data={pdata} width={200} height={200} margin={{ top: 5, right: 250, left: 10, bottom: 2 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="Ash" interval={'preserveStartEnd'} tickFormatter={(value) => value } />
           <YAxis />
@@ -73,7 +73,7 @@ function App() {
         </AreaChart>
       </ResponsiveContainer> */}
 
-      <h1 className="chart-heading">Bar Chart</h1>
+      <h3 className="chart-heading">Bar Chart</h3>
       <ResponsiveContainer width="100%" aspect={3}>
         <BarChart
           width={500}
